@@ -75,15 +75,15 @@ public class FruitBasket {
         for (int i = 0; i < fruits.size(); i++) {
             int count = 1;
             l1 = fruits.get(i);
-            if (!varChrFruits.contains(l1)) {
-                for (int j = i + 1; j < fruits.size(); j++) {
-                    l2 = fruits.get(j);
-                    if (l1.equals(l2)) {
-                        count++;
-                        varChrFruits.add(l2);
-                    }
-                }
-            }
+//            if (!varChrFruits.contains(l1)) {
+//                for (int j = i + 1; j < fruits.size(); j++) {
+//                    l2 = fruits.get(j);
+//                    if (l1.equals(l2)) {
+//                        count++;
+//                        varChrFruits.add(l2);
+//                    }
+//                }
+//            }
             if (M1.containsKey(l1)) {
                 M1.put(l1, M1.get(l1) + 1);
             } else {
